@@ -1,0 +1,25 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "target": "ES2017",
+    "jsx": "react",
+    "strict": false,
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    },
+    "esModuleInterop": true,
+    "strictNullChecks": false,
+    "noUnusedParameters": false,
+    "noUnusedLocals": false,
+    "noEmit": true,
+    "allowImportingTsExtensions": true
+  },
+  "include": [
+    ".expo/types/router.d.ts",
+    "app/index.tsx",
+    "expo-env.d.ts",
+    ".expo/types/**/*.ts"
+  ]
+}
